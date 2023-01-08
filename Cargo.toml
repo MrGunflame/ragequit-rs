@@ -1,0 +1,15 @@
+[package]
+name = "ragequit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pin-project = "1.0.12"
+tokio = { version = "1.24.1", features = ["sync", "parking_lot"] }
+
+[dev-dependencies]
+futures = "0.3.25"
+tokio = { version = "1.24.1", features = ["macros", "rt", "rt-multi-thread", "time"] }
+
+[target.'cfg(unix)'.dependencies]
+nix = { version = "0.26.1", features = ["signal"] }
