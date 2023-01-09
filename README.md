@@ -15,7 +15,7 @@ server processes, but may have other applications aswell.
 The global [`SHUTDOWN`] instance is used to signal shutdown events and handle them gracefully
 by creating [`ShutdownListener`]s.
 
-```no_run
+```rust
 use ragequit::{init, SHUTDOWN};
 
 #[tokio::main]
@@ -44,7 +44,7 @@ handlers. Alternatively you can install system signal handlers yourself.
 
 ## Example for *nix systems
 
-```no_run
+```rust
 use core::ffi::c_int;
 
 use nix::sys::signal::{sigaction, SaFlags, SigAction, SigHandler, SigSet, Signal};
