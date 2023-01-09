@@ -1,7 +1,6 @@
 use core::ffi::c_int;
 
-use nix::sys::signal::{sigaction, SaFlags, SigAction, SigHandler, Signal};
-use nix::sys::signalfd::SigSet;
+use nix::sys::signal::{sigaction, SaFlags, SigAction, SigHandler, SigSet, Signal};
 
 pub(crate) fn init() {
     let action = SigAction::new(
