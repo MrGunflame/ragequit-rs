@@ -13,10 +13,8 @@ async fn test_many_listeners() {
 
             // Drop delay on half of the listeners.
             if i >= 32 {
-                sleep(Duration::from_secs(2).into()).await;
+                sleep(Duration::from_secs(2)).await;
             }
-
-            drop(listener);
         });
     }
 

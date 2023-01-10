@@ -11,9 +11,7 @@ async fn test_slow_listeners() {
             tokio::pin!(listener);
             (&mut listener).await;
 
-            sleep(Duration::from_secs(5).into()).await;
-
-            drop(listener);
+            sleep(Duration::from_secs(5)).await;
         });
     }
 
