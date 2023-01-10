@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "Gracefully shut down a process"
 authors = ["MrGunflame <git@robbsrv.de>"]
-repository = "https://github.com/MrGunflame/ragequit"
+repository = "https://github.com/MrGunflame/ragequit-rs"
 documentation = "https://docs.rs/ragequit"
 license = "MIT OR Apache-2.0"
 
